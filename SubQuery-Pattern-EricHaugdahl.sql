@@ -7,5 +7,5 @@ FROM assignment
 WHERE NOT EXISTS ( SELECT *
                   FROM project
                   WHERE NOT EXISTS ( SELECT *
-                                    FROM	assignment
+                                    FROM assignment
                                     WHERE Project.ProjectID=assignment.ProjectID))
